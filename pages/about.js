@@ -1,7 +1,10 @@
-import React from "react"
+import React, {useEffect} from "react"
 import styles from "../styles/Home.module.css"
 
 export default function About() {
+
+  useEffect(() => document.title = "Ninja | About")
+
   return (
     <div>
       <h1 className={styles.title}>About Page</h1>

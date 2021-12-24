@@ -7,9 +7,13 @@ function NotFound() {
   const router = useRouter()
 
   useEffect(() => {
+
+    document.title = "404 Page"
+
     setTimeout(() => {
       router.push("/")
     }, 3000)
+    
   }, [router])
 
   return (

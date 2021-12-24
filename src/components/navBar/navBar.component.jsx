@@ -1,12 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import HTMLHeadElement from "../htmlHeadElement/htmlHeadElement.component";
+import ninjaLogo from "../../../public/nnja.png"
+import Image from "next/image";
 
 const NavBar = () => {
   return(
     <nav>
       <div className="logo">
-        <h1>Ninja List</h1>
+        <Image 
+          src={ninjaLogo} 
+          alt="ninja logo" 
+          width="128px" 
+          height="80 px"
+        />
       </div>
 
       <Link href="/"><a>Home</a></Link>
