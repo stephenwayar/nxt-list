@@ -10,7 +10,7 @@ const NavBar = () => {
         <Image 
           src={ninjaLogo} 
           alt="ninja logo" 
-          width="128px" 
+          width="90px" 
           height="80 px"
         />
       </div>
