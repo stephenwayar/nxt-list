@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import HTMLHeadElement from "../htmlHeadElement/htmlHeadElement.component";
 
 const NavBar = () => {
   return(

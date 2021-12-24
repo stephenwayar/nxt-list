@@ -2,10 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div>
+    <footer>
       <p><b>Copyright 2021 Stephen Wayar</b></p>
-    </div>
+    </footer>
   );
 }
-
 export default Footer;
