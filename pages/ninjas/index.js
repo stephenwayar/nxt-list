@@ -3,13 +3,10 @@ import styles from "../../styles/Ninjas.module.css"
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
-
   const res = await fetch(
     "https://jsonplaceholder.typicode.com/users"
   )
-
   const data = await res.json()
-
   return{
     props:{
       ninjas: data
@@ -17,9 +14,7 @@ export const getStaticProps = async () => {
   }
 }
 
-
 function Ninjas({ninjas}) {
-
   return (
     <div>
       <h1>All Ninjas</h1>
@@ -28,7 +23,7 @@ function Ninjas({ninjas}) {
         return(
           <Link 
             key={ninja.id}
-            href={`/ninjas/${ninja.id}`}
+            href={`/ninjas/${ninja.id}/`}
           >
             <a className={styles.single}>
               <h3>{ninja.name}</h3>
